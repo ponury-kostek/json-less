@@ -62,7 +62,7 @@ function stringify_str(key, holder) {
 			if (!value) {
 				return "null";
 			}
-			if (depth === 512) {
+			if (depth === 8192) {
 				throw new TypeError("Converting circular structure to JSONLess");
 			}
 			depth += 1;
